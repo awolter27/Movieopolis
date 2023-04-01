@@ -1,6 +1,6 @@
 # Movieopolis
 
-# Choose Your App
+## Choose Your App
 
 Build an App similar to our Amazon clone app with whatever you want instead of Amazon. I’ve provided a sample of one that might use animals as what you’re creating but again just decide what fits best with your personal hobbies as doing something you enjoy will help you get through the work.
 
