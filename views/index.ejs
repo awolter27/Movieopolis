@@ -4,14 +4,10 @@
 <div class="index-div-container">
     <% for(let i = 0; i < movies.length; i++) { %>
         <div class="index-div-all-movies">
-            <a href="movies/<%= movies[i]._id %>">
+            <a href="movies/<%= movies[i]._id %>" class="index-link">
+                <img src=<%= movies[i].image %> alt="Image of Original <%= movies[i].title %> Poster" class="index-img">
                 <h1> <%= movies[i].title %></h1>
             </a>
-            <h3><span>Director:</span> <%= movies[i].director %></h3>
-            <h3><span>Runtime:</span> <%= movies[i].runtime %> minutes</h3>
-            <h3><span>Rotten Tomatoes:</span> <%= movies[i].rottenTomatoes %>%</h3>
-            <h3><span>Release Date:</span> <%= movies[i].releaseDate %></h3>
-            <h3><span>Genre:</span> <%= movies[i].genre %></h3>
         </div>
     <% } %>
 </div>

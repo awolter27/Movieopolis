@@ -6,6 +6,10 @@ const moviesSchema = new mongoose.Schema(
             type: String,
             required: [true, 'You must enter a title']
         },
+        image: {
+            type: String,
+            required: [true, 'You must enter an image']
+        },
         director: {
             type: String,
             required: [true, 'You must enter a director']
