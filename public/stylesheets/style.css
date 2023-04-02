@@ -67,8 +67,17 @@ nav {
     text-align: center;
 }
 
+.index-div-container {
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    grid-auto-rows: minmax(550px, auto);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
 h3 {
     font-family: 'Poppins', sans-serif;
+    padding: 3px;
 }
 
 span {

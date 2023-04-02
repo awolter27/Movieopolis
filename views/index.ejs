@@ -1,17 +1,19 @@
 <%- include('./partials/header.ejs', {name: 'Movies'}) %>
 
 <h1 class="index-header">Movies</h1>
-<% for(let i = 0; i < movies.length; i++) { %>
-    <div class="index-div-all-movies">
-        <a href="movies/<%= movies[i]._id %>">
-            <h1> <%= movies[i].title %></h1>
-        </a>
-        <h3><span>Director:</span> <%= movies[i].director %></h3>
-        <h3><span>Runtime:</span> <%= movies[i].runtime %> minutes</h3>
-        <h3><span>Rotten Tomatoes:</span> <%= movies[i].rottenTomatoes %>%</h3>
-        <h3><span>Release Date:</span> <%= movies[i].releaseDate %></h3>
-        <h3><span>Genre:</span> <%= movies[i].genre %></h3>
-    </div>
-<% } %>
+<div class="index-div-container">
+    <% for(let i = 0; i < movies.length; i++) { %>
+        <div class="index-div-all-movies">
+            <a href="movies/<%= movies[i]._id %>">
+                <h1> <%= movies[i].title %></h1>
+            </a>
+            <h3><span>Director:</span> <%= movies[i].director %></h3>
+            <h3><span>Runtime:</span> <%= movies[i].runtime %> minutes</h3>
+            <h3><span>Rotten Tomatoes:</span> <%= movies[i].rottenTomatoes %>%</h3>
+            <h3><span>Release Date:</span> <%= movies[i].releaseDate %></h3>
+            <h3><span>Genre:</span> <%= movies[i].genre %></h3>
+        </div>
+    <% } %>
+</div>
 
 <%- include('./partials/footer.ejs') %>

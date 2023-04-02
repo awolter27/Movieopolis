@@ -1,5 +1,12 @@
 <%- include('./partials/header.ejs', {name: movie.title}) %>
 
-
+<h3><%= movie.title %></h3>
+<h3>Director: <%= movie.director %></h3>
+<h3>Runtime: <%= movie.runtime %> minutes</h3>
+<h3>Rotten Tomatoes: <%= movie.rottenTomatoes %></h3>
+<h3>Release Date: <%= movie.releaseDate %>%</h3>
+<h3>Genre: <%= movie.genre %></h3>
+<a href="/movie/<%= movie._id %>/edit">Edit</a>
+<a href="/movie/<%= movie._id %>/delete">Delete</a>
 
 <%- include('./partials/footer.ejs') %>

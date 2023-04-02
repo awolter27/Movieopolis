@@ -17,10 +17,10 @@ router.get('/new', (req, res) => {
     res.render('new.ejs');
 })
 
-router.get('/genre/:id', async (req, res, next) => {
+router.get('/genre/:genre', async (req, res, next) => {
     try {
-        const moviesByGenre = await movies.find({ genre: req.params.id });
-        res.render('movies/show_genre.ejs', { movies: moviesByGenre });
+        const moviesByGenre = await movies.find({ genre: req.params.genre });
+        res.render('show_genre.ejs', { movies: moviesByGenre });
     } catch (err) {
         next();
         console.log(err);
@@ -29,7 +29,7 @@ router.get('/genre/:id', async (req, res, next) => {
 
 router.get('/:id', async (req, res, next) => {
     try {
-        const myMovie = await movies.findByID(req.params.id);
+        const myMovie = await movies.findById(req.params.id);
         res.render('show.ejs', { movie: myMovie });
     } catch (err) {
         next();
@@ -39,7 +39,7 @@ router.get('/:id', async (req, res, next) => {
 
 router.get('/:id/edit', async (req, res, next) => {
     try {
-        const movieToBeEdited = await movies.findByID(req.params.id);
+        const movieToBeEdited = await movies.findById(req.params.id);
         res.render('edit.ejs', { movie: movieToBeEdited });
     } catch (err) {
         next();
@@ -49,7 +49,7 @@ router.get('/:id/edit', async (req, res, next) => {
 
 router.get('/:id/delete', async (req, res, next) => {
     try {
-        const movieToBeDeleted = await movies.findByID(req.params.id);
+        const movieToBeDeleted = await movies.findById(req.params.id);
         res.render('delete.ejs', { movie: movieToBeDeleted });
     } catch (err) {
         next();
@@ -69,7 +69,7 @@ router.post('', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
     try {
-        const updatedMovie = await movies.findByIDAndUpdate(req.params.id, req.body);
+        const updatedMovie = await movies.findByIdAndUpdate(req.params.id, req.body);
         res.redirect(`/movies/${req.params.id}`);
     } catch (err) {
         next();
@@ -88,3 +88,5 @@ router.delete('/:id', async (req, res, next) => {
 })
 
 module.exports = router;
+
+{/* <img src= <%= movies[i].image %>> */}
