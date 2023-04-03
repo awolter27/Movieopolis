@@ -4,12 +4,15 @@
 <div class="show-genre-div-container">
     <% for(let i = 0; i < movies.length; i++) { %>
         <div class="show-genre-div-all-movies">
-            <a href="movies/<%= movies[i]._id %>" class="show-genre-link">
+            <a href="/movies/<%= movies[i]._id %>" class="show-genre-link">
                 <img src=<%= movies[i].image %> alt="Image of Original <%= movies[i].title %> Poster" class="index-img">
                 <h1> <%= movies[i].title %></h1>
             </a>
         </div>
     <% } %>
+</div>
+<div class="show_genre-add-link-container">
+    <a href="/movies/new" class="show_genre-add-link">Add A Movie</a>
 </div>
 
 <%- include('./partials/footer.ejs') %>

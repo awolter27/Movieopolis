@@ -23,6 +23,7 @@ nav {
     cursor: pointer;
     font-size: 18px;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home-header {
@@ -34,7 +35,7 @@ nav {
 
 .home-div-enter-link {
     margin-top: 10vh;
-    text-align: center;     
+    text-align: center;
     width: 100%;
 }
 
@@ -54,8 +55,8 @@ nav {
 
 .index-header,
 .show-genre-header {
-    font-size: 50px;
-    margin: 30px;
+    font-size: 75px;
+    margin: 40px;
     text-align: center;
 }
 
@@ -63,7 +64,7 @@ nav {
 .show-genre-div-all-movies,
 .show-all-movies {
     border: black solid 1px;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(234, 234, 234);
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
@@ -78,11 +79,6 @@ nav {
     justify-content: center;
 }
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-    padding: 3px;
-}
-
 .index-img {
     width: 15vw;
     height: 40vh;
@@ -92,8 +88,72 @@ h3 {
 .index-link,
 .show-genre-link {
     cursor: pointer;
-    color: black;
+    color: blue;
     text-decoration: none;
+}
+
+.header-h1 {
+    font-size: 30px;
+}
+
+.show-outerdiv-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-add-link-container,
+.show_genre-add-link-container {
+    text-align: center;
+    padding: 100px;
+}
+
+.index-add-link,
+.show_genre-add-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: rgb(154, 37, 35);
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5%;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #CCCCCC;
+    padding: 15px;
+    color: white;
+}
+
+.show-edit-link,
+.show-delete-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(154, 37, 35);
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5%;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #CCCCCC;
+    padding: 15px;
+    margin: 75px;
+    color: white;
+}
+
+.show-h1 {
+    font-size: 100px;
+    padding: 25px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.show-innerdiv-container {
+    padding-top: 75px;
 }
 
 .error-img {
