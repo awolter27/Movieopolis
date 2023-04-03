@@ -156,6 +156,15 @@ h3 {
     padding-top: 75px;
 }
 
+label,
+input {
+    font-size: 25px;
+}
+
+.input {
+    text-align: center;
+}
+
 .error-img {
     display: block;
     height: auto;
