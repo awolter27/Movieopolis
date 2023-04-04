@@ -1,5 +1,19 @@
 <%- include('./partials/header.ejs', {name: 'Delete ' + movie.title}) %>
 
+<div class="delete-outerdiv-container">
+    <h1 class="delete-h1"><%= movie.title %></h1>
+    <p><span id="bold">Director: </span><%= movie.director %></p>
+    <p><span id="bold">Runtime: </span><%= movie.runtime %> minutes</p>
+    <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
+    <p><span id="bold">Release Date: </span><%= movie.releaseDate %></p>
+    <p><span id="bold">Genre: </span><%= movie.genre %></p>
+    <form method="POST" action="/movies/<%= movie._id %>?_method=DELETE">
+        <input type="submit" value="Delete <%= movie.title %>" id="delete-delete-input">
+    </form>
+    <div class="delete-innerdiv-container">
+        <a href="/movies" class="show-back-link">Back</a>
+    </div>
+</div>
 
 
 <%- include('./partials/footer.ejs') %>
