@@ -18,28 +18,32 @@ nav {
     padding: 20px;
 }
 
-.nav {
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+.header-h1 {
+    font-size: 30px;
 }
 
-.home-header {
+.header-a {
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home-h1 {
     color: white;
     font-size: 150px;
     margin-top: 7vh;
     text-align: center;
 }
 
-.home-div-enter-link {
+.home-div {
     margin-top: 10vh;
     text-align: center;
     width: 100%;
 }
 
-.home-enter-link {
+.home-a {
     background-color: rgb(154, 37, 35);
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
@@ -53,123 +57,81 @@ nav {
     text-decoration: none;
 }
 
-.index-header,
-.show-genre-header {
+.index-h1,
+.show_genre-h1 {
     font-size: 75px;
     margin: 40px;
     text-align: center;
 }
 
-.index-div-all-movies,
-.show-genre-div-all-movies,
-.show-all-movies {
-    border: black solid 1px;
-    background-color: rgb(234, 234, 234);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.index-div-container,
-.show-genre-div-container {
+.index-outer-div,
+.show_genre-outer-div {
     display: grid;
-    grid-template-columns: 550px 550px 550px;
     grid-auto-rows: minmax(550px, auto);
     grid-gap: 10px;
+    grid-template-columns: 550px 550px 550px;
     justify-content: center;
 }
 
-.index-img {
-    width: 20vw;
-    height: 40vh;
-    padding: 10px;
+.index-inner-div,
+.show_genre-inner-div {
+    background-color: rgb(234, 234, 234);
+    border: black solid 1px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
 }
 
-.index-link,
-.show-genre-link {
-    cursor: pointer;
+.index-a,
+.show_genre-a {
     color: blue;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.header-h1 {
-    font-size: 30px;
+.index-img,
+.show_genre-img {
+    height: 40vh;
+    padding: 10px;
+    width: 20vw;
 }
 
-.show-outerdiv-container,
-.delete-outerdiv-container {
+.index-add-div,
+.show_genre-add-div {
+    padding: 100px;
+    text-align: center;
+}
+
+.index-add-a,
+.show_genre-add-a {
+    background-color: rgb(154, 37, 35);
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5%;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #CCCCCC;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.show-outer-div,
+.new-outer-div,
+.edit-outer-div,
+.delete-outer-div {
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    align-items: center;
     justify-content: center;
-}
-
-.index-add-link-container,
-.show_genre-add-link-container {
-    text-align: center;
-    padding: 100px;
-}
-
-.index-add-link,
-.show_genre-add-link {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 40px;
-    background-color: rgb(154, 37, 35);
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-    border-radius: 5%;
-    border-right: 1px solid #333333;
-    border-top: 1px solid #CCCCCC;
-    padding: 15px;
-    color: white;
-}
-
-.show-edit-link,
-.show-back-link,
-.show-delete-link {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 30px;
-    background-color: rgb(154, 37, 35);
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-    border-radius: 5%;
-    border-right: 1px solid #333333;
-    border-top: 1px solid #CCCCCC;
-    padding: 15px;
-    margin: 75px;
-    color: white;
-}
-
-.new-back-link,
-.edit-back-link {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 30px;
-    background-color: rgb(154, 37, 35);
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
-    border-radius: 5%;
-    border-right: 1px solid #333333;
-    border-top: 1px solid #CCCCCC;
-    padding: 15px;
-    margin: 75px;
-    color: white;
 }
 
 .show-h1,
 .delete-h1 {
     font-size: 100px;
     padding: 25px;
-    text-align: center;
-}
-
-.new-h1,
-.edit-h1 {
-    font-size: 90px;
-    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -183,61 +145,73 @@ p {
     font-weight: bold;
 }
 
-.show-innerdiv-container,
-.delete-innerdiv-container,
-.new-back-link-container,
-.edit-back-link-container {
+.show-inner-div,
+.delete-inner-div,
+.new-back-div,
+.edit-back-div {
     padding-top: 75px;
 }
 
-.edit-page {
-    margin-bottom: 40px;
-    margin-top: 15px;
+.show-edit-a,
+.show-delete-a,
+.show-back-a, 
+.new-back-a,
+.edit-back-a {
+    background-color: rgb(154, 37, 35);
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5%;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #CCCCCC;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 75px;
+    padding: 15px;
+    text-decoration: none;
 }
 
-.new-div-container,
-.edit-div-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-#new-add-input,
-#edit-edit-input {
-    width: 8vw;
-    margin-top: 10px;
-}
-
-#delete-delete-input {
-    margin-top: 10px;
+.new-h1,
+.edit-h1 {
+    font-size: 90px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 form {
     text-align: center;
 }
 
-input {
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    box-sizing: border-box;
+.new-inner-div,
+.edit-inner-div {
+    padding: 5px;
 }
 
 label {
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
 
-.new-div,
-.edit-div {
-    padding: 5px;
+input {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    width: 100%;
 }
 
 .input {
     text-align: center;
+}
+
+#new-submit-input,
+#edit-submit-input {
+    margin-top: 10px;
+    width: 8vw;
+}
+
+#delete-submit-input {
+    margin-top: 10px;
 }
 
 .error-img {

@@ -60,9 +60,7 @@ router.get('/:id/delete', async (req, res, next) => {
 router.post('', async (req, res, next) => {
     try {
         const newMovie = await movies.create(req.body);
-        // const newMovieGenre = newMovie.genre;
         res.redirect('/movies');
-        // res.redirect(`/movies/${newMovieGenre}`);
     } catch (err) {
         next();
         console.log(err);
