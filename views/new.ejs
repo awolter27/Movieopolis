@@ -1,26 +1,42 @@
-<%- include('./partials/header.ejs', {name: 'Add Movie'}) %>
+<%- include('./partials/header.ejs', {name: 'Add Movie' }) %>
 
-<h1>Add A Movie</h1>
-<div class="new-div-container">
-    <form action="/movies" method="POST">
-        <label for="title">Title:</label>
-        <input required type="text" name="title" id="title" class="input" placeholder="Top Gun">
-        <label for="image-address">Image Address:</label>
-        <input required type="text" name="image-address" id="image-address" class="input" placeholder="https://www.themoviedb.org/t/p/original/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg">
-        <label for="director">Director:</label>
-        <input required type="text" name="director" id="director" class="input" placeholder="Tony Scott">
-        <label for="runtime">Runtime:</label>
-        <input required type="number" name="runtime" id="runtime" class="input" placeholder="110">
-        <label for="rottenTomatoes">Rotten Tomatoes:</label>
-        <input required type="number" name="rottenTomatoes" id="rottenTomatoes" class="input" placeholder="58">
-        <label for="releaseDate">Release Date:</label>
-        <input required type="text" name="releaseDate" id="releaseDate" class="input" placeholder="May 16, 1986">
-        <label for="genre">Genre:</label>
-        <input required type="text" name="genre" id="genre" class="input" placeholder="Action">
-    </form>
-</div>
-<div class="new-back-link-container">
-    <a href="/movies" class="new-back-link">Back</a>
-</div>
+    <div class="new-div-container">
+        <h1 class="new-h1">Add A Movie</h1>
+        <form action="/movies" method="POST">
+            <div class="new-div">
+                <label for="title">Title</label>
+                <input required type="text" name="title" id="title" class="input" placeholder="Top Gun">
+            </div>
+            <div class="new-div">
+                <label for="image">Image Address</label>
+                <input required type="text" name="image" id="image" class="input"
+                    placeholder="https//www.themoviedb.org/t/p/original/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg">
+            </div>
+            <div class="new-div">
+                <label for="director">Director</label>
+                <input required type="text" name="director" id="director" class="input" placeholder="Tony Scott">
+            </div>
+            <div class="new-div">
+                <label for="runtime">Runtime</label>
+                <input required type="number" name="runtime" id="runtime" class="input" placeholder="110">
+            </div>
+            <div class="new-div">
+                <label for="rottenTomatoes">Rotten Tomatoes</label>
+                <input required type="number" name="rottenTomatoes" id="rottenTomatoes" class="input" placeholder="58">
+            </div>
+            <div class="new-div">
+                <label for="releaseDate">Release Date</label>
+                <input required type="text" name="releaseDate" id="releaseDate" class="input" placeholder="May 16, 1986">
+            </div>
+            <div class="new-div">
+                <label for="genre">Genre</label>
+                <input required type="text" name="genre" id="genre" class="input" placeholder="Action">
+            </div>
+            <input id="new-add-input" type="submit" value="Add Movie">
+        </form>
+        <div class="new-back-link-container">
+            <a href="/movies" class="new-back-link">Back</a>
+        </div>
+    </div>
 
 <%- include('./partials/footer.ejs') %>

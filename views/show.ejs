@@ -1,17 +1,16 @@
 <%- include('./partials/header.ejs', {name: movie.title}) %>
 
     <div class="show-outerdiv-container">
-        <h1 class="show-h1">
-            <%= movie.title %>
-        </h1>
-        <h3>Director: <%= movie.director %></h3>
-        <h3>Runtime: <%= movie.runtime %> minutes</h3>
-        <h3>Rotten Tomatoes: <%= movie.rottenTomatoes %>%</h3>
-        <h3>Release Date: <%= movie.releaseDate %></h3>
-        <h3>Genre: <%= movie.genre %></h3>
+        <h1 class="show-h1"><%= movie.title %></h1>
+        <p><span id="bold">Director: </span><%= movie.director %></p>
+        <p><span id="bold">Runtime: </span><%= movie.runtime %> minutes</p>
+        <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
+        <p><span id="bold">Release Date: </span><%= movie.releaseDate %></p>
+        <p><span id="bold">Genre: </span><%= movie.genre %></p>
         <div class="show-innerdiv-container">
             <a href="/movies/<%= movie._id %>/edit" class="show-edit-link">Edit</a>
             <a href="/movies/<%= movie._id %>/delete" class="show-delete-link">Delete</a>
+            <a href="/movies" class="show-back-link">Back</a>
         </div>
     </div>
 
