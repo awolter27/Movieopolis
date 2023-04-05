@@ -5,7 +5,12 @@ let { movies } = require('../models');
 
 router.get('', async (req, res, next) => {
     try {
-        const myMovies = await movies.find({});
+        let myMovies;
+        if (req.query.s) {
+            myMovies = await movies.find({ title: req.query.s });
+        } else {
+            myMovies = await movies.find({});
+        }
         res.render('index.ejs', { movies: myMovies });
     } catch (err) {
         next();

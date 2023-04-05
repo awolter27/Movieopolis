@@ -64,6 +64,32 @@ nav {
     text-align: center;
 }
 
+.index-search-div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+#index-search-input {
+    text-align: center;
+    width: 30vw;
+}
+
+#index-search-btn {
+    background-color: rgb(154, 37, 35);
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5%;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #CCCCCC;
+    color: white;
+    cursor: pointer;
+    font-family: 'Limelight', cursive;
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: none;
+}
+
 .index-outer-div,
 .show_genre-outer-div {
     display: grid;
@@ -178,7 +204,7 @@ p {
     padding-top: 75px;
 }
 
-.new-back-input {
+.new-back-a {
     background-color: rgb(154, 37, 35);
     border-radius: 5%;
     color: white;
