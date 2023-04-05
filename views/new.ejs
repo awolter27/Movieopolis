@@ -1,5 +1,11 @@
 <%- include('./partials/header.ejs', { name: 'Add Movie' }) %>
 
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
     <div class="new-outer-div">
         <h1 class="new-h1">Add A Movie</h1>
         <form action="/movies" method="POST">
@@ -31,10 +37,14 @@
                 <label for="genre">Genre</label>
                 <input required type="text" name="genre" id="genre" class="input" placeholder="Action">
             </div>
+            <div class="new-inner-div">
+                <label for="trailer">Trailer</label>
+                <input required type="text" name="trailer" id="trailer" class="input" placeholder="https://www.youtube.com/embed/CwXOrWvPBPk">
+            </div>
             <input id="new-submit-input" type="submit" value="Add Movie">
         </form>
         <div class="new-back-div">
-            <a href="/movies" class="new-back-a">Back</a>
+            <input type="button" class="new-back-input" value="Back" onclick="goBack()">
         </div>
     </div>
 

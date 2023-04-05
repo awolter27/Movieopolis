@@ -7,6 +7,7 @@
         <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
         <p><span id="bold">Release Date: </span><%= movie.releaseDate %></p>
         <p><span id="bold">Genre: </span><%= movie.genre %></p>
+        <iframe width="560" height="315" src="<%= movie.trailer %>" title="<%= movie.title %> Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="trailer"></iframe>
         <div class="show-inner-div">
             <a href="/movies/<%= movie._id %>/edit" class="show-edit-a">Edit</a>
             <a href="/movies/<%= movie._id %>/delete" class="show-delete-a">Delete</a>

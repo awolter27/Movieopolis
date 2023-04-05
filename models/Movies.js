@@ -30,6 +30,10 @@ const moviesSchema = new mongoose.Schema(
         genre: {
             type: String,
             required: [true, 'You must enter a genre']
+        },
+        trailer: {
+            type: String,
+            required: [true, 'You must enter a trailer']
         }
     },
     {

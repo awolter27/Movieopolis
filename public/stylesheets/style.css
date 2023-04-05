@@ -147,15 +147,17 @@ p {
 
 .show-inner-div,
 .delete-inner-div,
-.new-back-div,
 .edit-back-div {
     padding-top: 75px;
+}
+
+.trailer {
+    padding: 30px;
 }
 
 .show-edit-a,
 .show-delete-a,
 .show-back-a,
-.new-back-a,
 .edit-back-a {
     background-color: rgb(154, 37, 35);
     border-bottom: 1px solid #333333;
@@ -169,6 +171,23 @@ p {
     margin: 75px;
     padding: 15px;
     text-decoration: none;
+}
+
+.new-back-div {
+    display: flex;
+    padding-top: 75px;
+}
+
+.new-back-input {
+    background-color: rgb(154, 37, 35);
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 15px;
 }
 
 .new-h1,

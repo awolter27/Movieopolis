@@ -7,6 +7,7 @@
         <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
         <p><span id="bold">Release Date: </span><%= movie.releaseDate %></p>
         <p><span id="bold">Genre: </span><%= movie.genre %></p>
+        <iframe width="560" height="315" src="<%= movie.trailer %>" title="<%= movie.title %> Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="trailer"></iframe>
         <form method="POST" action="/movies/<%= movie._id %>?_method=DELETE">
             <input type="submit" value="Delete <%= movie.title %>" id="delete-submit-input">
         </form>
