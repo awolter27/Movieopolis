@@ -16,7 +16,7 @@ const moviesSchema = new mongoose.Schema(
         },
         runtime: {
             type: Number,
-            required: [true, 'You must enter a release date'],
+            required: [true, 'You must enter a runtime'],
             defeault: 0
         },
         rottenTomatoes: {
