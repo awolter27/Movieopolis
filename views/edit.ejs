@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs', { name: 'Edit ' + movie.title }) %>
 
     <div class="edit-outer-div">
-        <h1 class="edit-h1">Edit <%= movie.title %></h1>
+        <h1 class="edit-heading">Edit <%= movie.title %></h1>
         <form action="/movies/<%= movie._id %>?_method=PUT" method="POST">
             <div class="edit-inner-div">
                 <label for="title">Title</label>
@@ -38,7 +38,7 @@
             <input id="edit-submit-input" type="submit" value="Edit Movie">
         </form>
         <div class="edit-back-div">
-            <a href="/movies/<%= movie._id %>" class="edit-back-a">Back</a>
+            <a href="/movies/<%= movie._id %>" class="edit-back-link">Back</a>
         </div>
     </div>
 

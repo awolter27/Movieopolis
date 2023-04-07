@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs', { name: 'Delete ' + movie.title }) %>
 
     <div class="delete-outer-div">
-        <h1 class="delete-h1"><%= movie.title %></h1>
+        <h1 class="delete-heading"><%= movie.title %></h1>
         <p><span id="bold">Director: </span><%= movie.director %></p>
         <p><span id="bold">Runtime: </span><%= movie.runtime %> minutes</p>
         <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
@@ -12,7 +12,7 @@
             <input type="submit" value="Delete <%= movie.title %>" id="delete-submit-input">
         </form>
         <div class="delete-inner-div">
-            <a href="/movies/<%= movie._id %>" class="show-back-a">Back</a>
+            <a href="/movies/<%= movie._id %>" class="show-back-link">Back</a>
         </div>
     </div>
 

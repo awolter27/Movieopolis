@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs', { name: movie.title }) %>
 
     <div class="show-outer-div">
-        <h1 class="show-h1"><%= movie.title %></h1>
+        <h1 class="show-heading"><%= movie.title %></h1>
         <p><span id="bold">Director: </span><%= movie.director %></p>
         <p><span id="bold">Runtime: </span><%= movie.runtime %> minutes</p>
         <p><span id="bold">Rotten Tomatoes: </span><%= movie.rottenTomatoes %>%</p>
@@ -9,9 +9,9 @@
         <p><span id="bold">Genre: </span><%= movie.genre %></p>
         <iframe width="560" height="315" src="<%= movie.trailer %>" title="<%= movie.title %> Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="trailer"></iframe>
         <div class="show-inner-div">
-            <a href="/movies/<%= movie._id %>/edit" class="show-edit-a">Edit</a>
-            <a href="/movies/<%= movie._id %>/delete" class="show-delete-a">Delete</a>
-            <a href="/movies" class="show-back-a">Back</a>
+            <a href="/movies/<%= movie._id %>/edit" class="show-edit-link">Edit</a>
+            <a href="/movies/<%= movie._id %>/delete" class="show-delete-link">Delete</a>
+            <a href="/movies" class="show-back-link">Back</a>
         </div>
     </div>
 

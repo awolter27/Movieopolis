@@ -63,8 +63,8 @@ nav {
 .nav-right-inner-div {
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    font-family: 'Poppins', sans-serif;
     display: none;
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     width: 94%;
     z-index: 1;
@@ -83,15 +83,6 @@ nav {
 
 .nav-title-dropdown {
     left: -70px;
-}
-
-.nav-genre-links {
-    color: white;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 23px;
-    text-decoration: none;
-    text-align: center;
 }
 
 .nav-right-inner-inner-div {
@@ -119,17 +110,16 @@ nav {
     text-decoration: none;
 }
 
+.nav-genre-links {
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-.home-h1 {
+.home-heading {
     color: white;
     font-size: 150px;
     margin-top: 7vh;
@@ -142,7 +132,7 @@ nav {
     width: 100%;
 }
 
-.home-a {
+.home-link {
     background-color: rgb(154, 37, 35);
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
@@ -156,8 +146,8 @@ nav {
     text-decoration: none;
 }
 
-.index-h1,
-.show_genre-h1 {
+.index-heading,
+.show_genre-heading {
     font-size: 75px;
     margin: 40px;
     text-align: center;
@@ -178,15 +168,15 @@ nav {
 .show_genre-inner-div {
     background-color: rgb(234, 234, 234);
     border: black solid 1px;
+    max-width: 500px;
     padding-bottom: 15px;
     padding-top: 15px;
     text-align: center;
     width: 30%;
-    max-width: 500px;
 }
 
-.index-a,
-.show_genre-a {
+.index-link,
+.show_genre-link {
     color: blue;
     cursor: pointer;
     text-decoration: none;
@@ -195,8 +185,8 @@ nav {
 .index-img,
 .show_genre-img {
     height: auto;
-    width: 90%;
     padding: 10px;
+    width: 90%;
 }
 
 .index-add-div,
@@ -205,8 +195,8 @@ nav {
     text-align: center;
 }
 
-.index-add-a,
-.show_genre-add-a {
+.index-add-link,
+.show_genre-add-link {
     background-color: rgb(154, 37, 35);
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
@@ -227,12 +217,12 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
+    padding-top: 35px;
 }
 
-.show-h1,
-.delete-h1 {
+.show-heading,
+.delete-heading {
     font-size: 100px;
     padding: 25px;
     text-align: center;
@@ -248,20 +238,20 @@ p {
     font-weight: bold;
 }
 
-.show-inner-div,
-.delete-inner-div,
-.edit-back-div {
-    padding-top: 75px;
-}
-
 .trailer {
     padding: 30px;
 }
 
-.show-edit-a,
-.show-delete-a,
-.show-back-a,
-.edit-back-a {
+.show-inner-div,
+.edit-back-div,
+.delete-inner-div {
+    padding-top: 75px;
+}
+
+.show-edit-link,
+.show-delete-link,
+.show-back-link,
+.edit-back-link {
     background-color: rgb(154, 37, 35);
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
@@ -276,25 +266,8 @@ p {
     text-decoration: none;
 }
 
-.new-back-div {
-    display: flex;
-    padding-top: 75px;
-}
-
-.new-back-a {
-    background-color: rgb(154, 37, 35);
-    border-radius: 5%;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    margin: 15px;
-    padding: 10px 15px;
-}
-
-.new-h1,
-.edit-h1 {
+.new-heading,
+.edit-heading {
     font-size: 90px;
     padding-bottom: 20px;
     text-align: center;
@@ -329,7 +302,24 @@ input {
 #new-submit-input,
 #edit-submit-input {
     margin-top: 10px;
-    width: 8vw;
+    width: 10vw;
+}
+
+.new-back-div {
+    display: flex;
+    padding-top: 75px;
+}
+
+.new-back-input {
+    background-color: rgb(154, 37, 35);
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 15px;
 }
 
 #delete-submit-input {
