@@ -1,6 +1,6 @@
-const input = document.querySelector('#index-search-input');
-const link = document.querySelector('#index-search-a');
-const button = document.querySelector('#index-search-btn');
+const input = document.querySelector('#nav-search-input');
+const link = document.querySelector('#nav-search-link');
+const button = document.querySelector('#nav-search-btn');
 
 button.addEventListener('mouseover', () => {
     link.href = `/movies?s=${input.value}`;

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/scripts/app.js" defer></script>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,40 +12,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/scripts/app.js" defer></script>
     <title>
-        <% if(typeof name !=='undefined' ) { %>
+        <% if (typeof name !== 'undefined') { %>
             <%= name %>
-                <% } else { %>
-                    Movieopolis
-                    <% } %>
+        <% } else { %>
+            Movieopolis
+        <% } %>
     </title>
 </head>
 
 <body>
     <nav>
-        <h1 class="header-h1">Movieopolis | </h1>
-        <a href="/" class="header-a">Home</a>
-        <a href="/movies" class="header-a">All Movies</a>
-        <div class="dropdown">
-            <button class="dropbtn">Search By Genre</button>
-            <div class="dropdown-content">
-                <a href="/movies/genre/Action" class="header-a">Action</a>
-                <a href="/movies/genre/Adventure" class="header-a">Adventure</a>
-                <a href="/movies/genre/Animated" class="header-a">Animated</a>
-                <a href="/movies/genre/Comedy" class="header-a">Comedy</a>
-                <a href="/movies/genre/Crime" class="header-a">Crime</a>
-                <a href="/movies/genre/Documentary" class="header-a">Documentary</a>
-                <a href="/movies/genre/Drama" class="header-a">Drama</a>
-                <a href="/movies/genre/Fantasy" class="header-a">Fantasy</a>
-                <a href="/movies/genre/Historical" class="header-a">Historical</a>
-                <a href="/movies/genre/Horror" class="header-a">Horror</a>
-                <a href="/movies/genre/Musical" class="header-a">Musical</a>
-                <a href="/movies/genre/Mystery" class="header-a">Mystery</a>
-                <a href="/movies/genre/Romance" class="header-a">Romance</a>
-                <a href="/movies/genre/Science Fiction" class="header-a">Science Fiction</a>
-                <a href="/movies/genre/Sports" class="header-a">Sports</a>
-                <a href="/movies/genre/Thriller" class="header-a">Thriller</a>
-                <a href="/movies/genre/Western" class="header-a">Western</a>
+        <h1 class="nav-left-heading">Movieopolis</h1>
+        <div class="nav-center-div">
+            <a href="/" class="nav-center-heading">Home</a>
+            <a href="/movies" class="nav-center-heading">Movies</a>
+        </div>
+        <div>
+            <div class="nav-right-outer-div">
+                <button class="nav-right-btns">Search by Title</button>
+                <div class="nav-right-inner-div nav-title-dropdown">
+                    <div class="nav-right-inner-inner-div">
+                        <input type="text" id="nav-search-input" placeholder="Top Gun">
+                        <a href="/movies" id="nav-search-link">
+                            <button type="submit" id="nav-search-btn">Search</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right-outer-div">
+                <button class="nav-right-btns">Search by Genre</button>
+                <div class="nav-right-inner-div">
+                    <a href="/movies/genre/Action" class="nav-genre-links">Action</a>
+                    <a href="/movies/genre/Adventure" class="nav-genre-links">Adventure</a>
+                    <a href="/movies/genre/Animated" class="nav-genre-links">Animated</a>
+                    <a href="/movies/genre/Comedy" class="nav-genre-links">Comedy</a>
+                    <a href="/movies/genre/Crime" class="nav-genre-links">Crime</a>
+                    <a href="/movies/genre/Documentary" class="nav-genre-links">Documentary</a>
+                    <a href="/movies/genre/Drama" class="nav-genre-links">Drama</a>
+                    <a href="/movies/genre/Fantasy" class="nav-genre-links">Fantasy</a>
+                    <a href="/movies/genre/Historical" class="nav-genre-links">Historical</a>
+                    <a href="/movies/genre/Horror" class="nav-genre-links">Horror</a>
+                    <a href="/movies/genre/Musical" class="nav-genre-links">Musical</a>
+                    <a href="/movies/genre/Mystery" class="nav-genre-links">Mystery</a>
+                    <a href="/movies/genre/Romance" class="nav-genre-links">Romance</a>
+                    <a href="/movies/genre/Science Fiction" class="nav-genre-links">Science Fiction</a>
+                    <a href="/movies/genre/Sports" class="nav-genre-links">Sports</a>
+                    <a href="/movies/genre/Thriller" class="nav-genre-links">Thriller</a>
+                    <a href="/movies/genre/Western" class="nav-genre-links">Western</a>
+                </div>
             </div>
         </div>
     </nav>

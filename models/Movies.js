@@ -17,7 +17,7 @@ const moviesSchema = new mongoose.Schema(
         runtime: {
             type: Number,
             required: [true, 'You must enter a runtime'],
-            defeault: 0
+            default: 0
         },
         rottenTomatoes: {
             type: Number,
