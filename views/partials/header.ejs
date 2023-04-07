@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>
-        <% if(typeof name !=='undefined') { %>
+        <% if(typeof name !=='undefined' ) { %>
             <%= name %>
-        <% } else { %>
-            Movieopolis
-        <% } %>
+                <% } else { %>
+                    Movieopolis
+                    <% } %>
     </title>
 </head>
 
@@ -26,22 +26,27 @@
     <nav>
         <h1 class="header-h1">Movieopolis | </h1>
         <a href="/" class="header-a">Home</a>
-        <a href="/movies" class="header-a">All</a>
-        <a href="/movies/genre/Action" class="header-a">Action</a>
-        <a href="/movies/genre/Adventure" class="header-a">Adventure</a>
-        <a href="/movies/genre/Animated" class="header-a">Animated</a>
-        <a href="/movies/genre/Comedy" class="header-a">Comedy</a>
-        <a href="/movies/genre/Crime" class="header-a">Crime</a>
-        <a href="/movies/genre/Documentary" class="header-a">Documentary</a>
-        <a href="/movies/genre/Drama" class="header-a">Drama</a>
-        <a href="/movies/genre/Fantasy" class="header-a">Fantasy</a>
-        <a href="/movies/genre/Historical" class="header-a">Historical</a>
-        <a href="/movies/genre/Horror" class="header-a">Horror</a>
-        <a href="/movies/genre/Musical" class="header-a">Musical</a>
-        <a href="/movies/genre/Mystery" class="header-a">Mystery</a>
-        <a href="/movies/genre/Romance" class="header-a">Romance</a>
-        <a href="/movies/genre/Science Fiction" class="header-a">Science Fiction</a>
-        <a href="/movies/genre/Sports" class="header-a">Sports</a>
-        <a href="/movies/genre/Thriller" class="header-a">Thriller</a>
-        <a href="/movies/genre/Western" class="header-a">Western</a>
+        <a href="/movies" class="header-a">All Movies</a>
+        <div class="dropdown">
+            <button class="dropbtn">Search By Genre</button>
+            <div class="dropdown-content">
+                <a href="/movies/genre/Action" class="header-a">Action</a>
+                <a href="/movies/genre/Adventure" class="header-a">Adventure</a>
+                <a href="/movies/genre/Animated" class="header-a">Animated</a>
+                <a href="/movies/genre/Comedy" class="header-a">Comedy</a>
+                <a href="/movies/genre/Crime" class="header-a">Crime</a>
+                <a href="/movies/genre/Documentary" class="header-a">Documentary</a>
+                <a href="/movies/genre/Drama" class="header-a">Drama</a>
+                <a href="/movies/genre/Fantasy" class="header-a">Fantasy</a>
+                <a href="/movies/genre/Historical" class="header-a">Historical</a>
+                <a href="/movies/genre/Horror" class="header-a">Horror</a>
+                <a href="/movies/genre/Musical" class="header-a">Musical</a>
+                <a href="/movies/genre/Mystery" class="header-a">Mystery</a>
+                <a href="/movies/genre/Romance" class="header-a">Romance</a>
+                <a href="/movies/genre/Science Fiction" class="header-a">Science Fiction</a>
+                <a href="/movies/genre/Sports" class="header-a">Sports</a>
+                <a href="/movies/genre/Thriller" class="header-a">Thriller</a>
+                <a href="/movies/genre/Western" class="header-a">Western</a>
+            </div>
+        </div>
     </nav>
