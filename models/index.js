@@ -1,5 +1,6 @@
 require('../config/connection');
 
 module.exports = {
-    movies: require('./Movies')
+    Movies: require('./Movies'),
+    seedData: require('./seedData')
 }

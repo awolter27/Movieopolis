@@ -1,12 +1,12 @@
-<%- include('./partials/header.ejs', { name: movies[0].genre }) %>
+<%- include('./partials/header.ejs', { name: Movies[0].genre }) %>
 
-    <h1 class="show_genre-heading"><%= movies[0].genre %></h1>
+    <h1 class="show_genre-heading"><%= Movies[0].genre %></h1>
     <div class="show_genre-outer-div">
-        <% for (let i = 0; i < movies.length; i++) { %>
+        <% for (let i = 0; i < Movies.length; i++) { %>
             <div class="show_genre-inner-div">
-                <a href="/movies/<%= movies[i]._id %>" class="show_genre-link">
-                    <img src=<%= movies[i].image %> alt="Image of Original <%= movies[i].title %> Poster" class="show_genre-img">
-                    <h1><%= movies[i].title %></h1>
+                <a href="/movies/<%= Movies[i]._id %>" class="show_genre-link">
+                    <img src=<%= Movies[i].image %> alt="Image of Original <%= Movies[i].title %> Poster" class="show_genre-img">
+                    <h1><%= Movies[i].title %></h1>
                 </a>
             </div>
         <% } %>

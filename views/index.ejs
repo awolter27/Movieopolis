@@ -2,11 +2,11 @@
 
     <h1 class="index-heading">Movies</h1>
     <div class="index-outer-div">
-        <% for (let i = 0; i < movies.length; i++) { %>
+        <% for (let i = 0; i < Movies.length; i++) { %>
             <div class="index-inner-div">
-                <a href="movies/<%= movies[i]._id %>" class="index-link">
-                    <img src=<%= movies[i].image %> alt="Image of Original <%= movies[i].title %> Poster" class="index-img">
-                    <h1><%= movies[i].title %></h1>
+                <a href="Movies/<%= Movies[i]._id %>" class="index-link">
+                    <img src=<%= Movies[i].image %> alt="Image of Original <%= Movies[i].title %> Poster" class="index-img">
+                    <h1><%= Movies[i].title %></h1>
                 </a>
             </div>
         <% } %>

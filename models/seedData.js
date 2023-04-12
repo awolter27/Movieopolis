@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const seededData = [
+const seedData = [
     {
         director: "Tobe Hooper",
         genre: "Horror",
@@ -2053,4 +2053,4 @@ const seededData = [
     }
 ]
 
-module.exports = seededData;
+module.exports = seedData;

@@ -1,44 +1,44 @@
-<%- include('./partials/header.ejs', { name: 'Edit ' + movie.title }) %>
+<%- include('./partials/header.ejs', { name: 'Edit ' + Movie.title }) %>
 
     <div class="edit-outer-div">
-        <h1 class="edit-heading">Edit <%= movie.title %></h1>
-        <form action="/movies/<%= movie._id %>?_method=PUT" method="POST">
+        <h1 class="edit-heading">Edit <%= Movie.title %></h1>
+        <form action="/movies/<%= Movie._id %>?_method=PUT" method="POST">
             <div class="edit-inner-div">
                 <label for="title">Title</label>
-                <input required type="text" name="title" id="title" class="input" value="<%= movie.title %>">
+                <input required type="text" name="title" id="title" class="input" value="<%= Movie.title %>">
             </div>
             <div class="edit-inner-div">
                 <label for="image">Image Address</label>
-                <input type="text" name="image" id="image" class="input" value="<%= movie.image %>">
+                <input type="text" name="image" id="image" class="input" value="<%= Movie.image %>">
             </div>
             <div class="edit-inner-div">
                 <label for="director">Director</label>
-                <input type="text" name="director" id="director" class="input" value="<%= movie.director %>">
+                <input type="text" name="director" id="director" class="input" value="<%= Movie.director %>">
             </div>
             <div class="edit-inner-div">
                 <label for="runtime">Runtime</label>
-                <input type="number" name="runtime" id="runtime" class="input" value="<%= movie.runtime %>">
+                <input type="number" name="runtime" id="runtime" class="input" value="<%= Movie.runtime %>">
             </div>
             <div class="edit-inner-div">
                 <label for="rottenTomatoes">Rotten Tomatoes</label>
-                <input type="number" name="rottenTomatoes" id="rottenTomatoes" class="input" value="<%= movie.rottenTomatoes %>">
+                <input type="number" name="rottenTomatoes" id="rottenTomatoes" class="input" value="<%= Movie.rottenTomatoes %>">
             </div>
             <div class="edit-inner-div">
                 <label for="releaseDate">Release Date</label>
-                <input type="text" name="releaseDate" id="releaseDate" class="input" value="<%= movie.releaseDate %>">
+                <input type="text" name="releaseDate" id="releaseDate" class="input" value="<%= Movie.releaseDate %>">
             </div>
             <div class="edit-inner-div">
                 <label for="genre">Genre</label>
-                <input type="text" name="genre" id="genre" class="input" value="<%= movie.genre %>">
+                <input type="text" name="genre" id="genre" class="input" value="<%= Movie.genre %>">
             </div>
             <div class="edit-inner-div">
                 <label for="trailer">Trailer</label>
-                <input required type="text" name="trailer" id="trailer" class="input" value="<%= movie.trailer %>">
+                <input required type="text" name="trailer" id="trailer" class="input" value="<%= Movie.trailer %>">
             </div>
             <input id="edit-submit-input" type="submit" value="Edit Movie">
         </form>
         <div class="edit-back-div">
-            <a href="/movies/<%= movie._id %>" class="edit-back-link">Back</a>
+            <a href="/movies/<%= Movie._id %>" class="edit-back-link">Back</a>
         </div>
     </div>
 
