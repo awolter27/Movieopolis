@@ -14,9 +14,9 @@ https://movieopolis.onrender.com
 - As a user, I will be able to search for a movie by genre via dropdown menu.
 - As a user, I will be able to see a catolog of all the movies in the database.
 - As a user, I will be able to add additional movies to the database.
-- As a user, I will have to fill out all of the required sections to add a movie to the database to give the show pages a uniform look.
+- As a user, I will be required to fill out the majority of the requested sections to add a movie to the database to give the show pages a uniform look.
 - As a user, I will be able to edit current movies in the database.
-- As a user, I will be able to delete movies from the database.
+- As a user, I will be able to delete current movies from the database.
 - As a user, I will recieve a warning notification before deleting a movie from the database.
 - As a user, I will be able to click on a movie title or poster to go to that movie's show page.
 - As a user, I will be able to view a movie's profile information on its show page, such as title, director, runtime, Rotten Tomato score, release date, and genre.
@@ -27,9 +27,9 @@ https://movieopolis.onrender.com
 ## Stretch Goals
 
 - I want to add additional movies to my database.
-- I want to add additional search features in the nav bar, such as filters by director, release date, Rotten Tomato scores, runtime, etc.
+- I want to add additional search features in the navigation bar, such as filters for director, release date, Rotten Tomato scores, runtime, etc.
 - I want to update the search features into a form so that the user can hit the enter key to conduct the search.
 - I want to update my HTML/CSS to create a responsive web design to optimize viewing on screens of different sizes.
-- I want to update the back link on the show page. If the user accesses the show page from the index page, the back link should direct them back to the index page. If the user accesses the show page from the show genre page, it should redirect them back to that show genre page.
+- I want to update the back link on the show page. If the user accesses the show page from the index page, the back link should redirect them back to the index page. If the user accesses the show page from the show genre page, the back link should redirect them back to that show genre page.
 - I want to allow the user to create and enter an email, username, and password.
 - I want to add in authentication and authorization.
