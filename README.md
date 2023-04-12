@@ -14,7 +14,7 @@ https://movieopolis.onrender.com
 - As a user, I will be able to search for a movie by genre via dropdown menu.
 - As a user, I will be able to see a catolog of all the movies in the database.
 - As a user, I will be able to add additional movies to the database.
-- As a user, I will be required to fill out the majority of the requested sections to add a movie to the database to give the show pages a uniform look.
+- As a user, I will be required to fill out certain fields when adding a movie to the database to give the show pages a uniform look.
 - As a user, I will be able to edit current movies in the database.
 - As a user, I will be able to delete current movies from the database.
 - As a user, I will recieve a warning notification before deleting a movie from the database.
