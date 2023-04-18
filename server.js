@@ -14,11 +14,12 @@ app.use(methodOverride('_method'));
 
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/movies', moviesController);
 
 app.get('/', (req, res) => {
     res.render('home.ejs');
 })
+
+app.use('/movies', moviesController);
 
 app.get('/*', (req, res) => {
     res.render('404.ejs');
