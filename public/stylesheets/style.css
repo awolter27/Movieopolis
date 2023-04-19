@@ -14,15 +14,18 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 10px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-left-heading {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .nav-center-div {
-    padding-left: 215px;
+    padding-left: 220px;
 }
 
 .nav-center-heading {
@@ -35,7 +38,7 @@ nav {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 10px;
     padding: 5px 10px;
     text-decoration: none;
@@ -56,7 +59,7 @@ nav {
     border-radius: 5%;
     color: white;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     padding: 9px 10px;
 }
 
@@ -66,23 +69,32 @@ nav {
     display: none;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    width: 94%;
     z-index: 1;
 }
 
-.nav-right-inner-div .nav-genre-links {
+.nav-right-inner-div .nav-links {
     color: black;
     display: block;
-    padding: 5px 10px;
+    font-size: 20px;
+    padding: 4px 8px;
     text-decoration: none;
 }
 
-.nav-right-inner-div .nav-genre-links:hover {
+.nav-right-inner-div .nav-links:hover {
     background-color: #ddd;
 }
 
-.nav-title-dropdown {
-    left: -70px;
+.nav-right-title-dropdown {
+    left: -155px;
+}
+
+.nav-right-genre-dropdown {
+    width: 174px;
+}
+
+.nav-right-sign-dropdown {
+    left: -55px;
+    width: 7vw;
 }
 
 .nav-right-inner-inner-div {
@@ -92,7 +104,7 @@ nav {
 
 #nav-search-input {
     text-align: center;
-    width: 50vw;
+    width: 15vw;
 }
 
 #nav-search-btn {
@@ -105,12 +117,12 @@ nav {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     padding: 5px;
     text-decoration: none;
 }
 
-.nav-genre-links {
+.nav-links {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -138,13 +150,13 @@ nav {
 
 .home-heading {
     color: white;
-    font-size: 150px;
-    margin-top: 7vh;
+    font-size: 130px;
+    margin-top: 13vh;
     text-align: center;
 }
 
 .home-div {
-    margin-top: 10vh;
+    margin-top: 6vh;
     text-align: center;
     width: 100%;
 }
@@ -159,15 +171,16 @@ nav {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 60px;
-    padding: 10px;
+    font-size: 45px;
+    padding: 8px;
     text-decoration: none;
 }
 
 .index-heading,
 .show_genre-heading {
     font-size: 75px;
-    margin: 40px;
+    margin-bottom: 40px;
+    margin-top: 110px;
     text-align: center;
 }
 
@@ -210,7 +223,7 @@ nav {
 
 .index-add-div,
 .show_genre-add-div {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 130px;
     text-align: center;
 }
@@ -226,7 +239,7 @@ nav {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     padding: 15px;
     text-decoration: none;
 }
@@ -244,8 +257,9 @@ nav {
 
 .show-heading,
 .delete-heading {
-    font-size: 100px;
-    padding: 25px;
+    font-size: 75px;
+    padding-bottom: 25px;
+    padding-top: 70px;
     text-align: center;
 }
 
@@ -283,16 +297,17 @@ p {
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     margin: 75px;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
 }
 
 .new-heading,
 .edit-heading {
-    font-size: 90px;
-    padding-bottom: 20px;
+    font-size: 75px;
+    padding-bottom: 25px;
+    padding-top: 70px;
     text-align: center;
 }
 
@@ -314,7 +329,7 @@ label {
 input {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -340,10 +355,10 @@ input {
     color: white;
     cursor: pointer;
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
     margin: 15px;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 #delete-submit-input {
@@ -355,6 +370,6 @@ input {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20vh;
+    margin-top: 25vh;
     width: 25vw;
 }
