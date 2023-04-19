@@ -6,7 +6,7 @@
             <div class="index-inner-div">
                 <a href="Movies/<%= Movies[i]._id %>" class="index-link">
                     <img src=<%= Movies[i].image %> alt="Image of Original <%= Movies[i].title %> Poster" class="index-img">
-                    <h1><%= Movies[i].title %></h1>
+                    <h1 id="index-title-heading"><%= Movies[i].title %></h1>
                 </a>
             </div>
         <% } %>
