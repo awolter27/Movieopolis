@@ -4,6 +4,7 @@ const PORT = 4000;
 
 const methodOverride = require('method-override');
 
+const usersController = require('./controllers/users.js');
 const moviesController = require('./controllers/movies.js');
 
 app.set('view engine', 'ejs');
@@ -14,10 +15,11 @@ app.use(methodOverride('_method'));
 
 app.use(express.urlencoded({ extended: false }));
 
-
 app.get('/', (req, res) => {
     res.render('home.ejs');
 })
+
+app.use('', usersController);
 
 app.use('/movies', moviesController);
 

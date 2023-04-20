@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="/scripts/app.js" defer></script>
     <title>
-        <% if (typeof name !== 'undefined') { %>
+        <% if (typeof name !=='undefined' ) { %>
             <%= name %>
-        <% } else { %>
-            Movieopolis
-        <% } %>
+                <% } else { %>
+                    Movieopolis
+                    <% } %>
     </title>
 </head>
 
@@ -66,12 +66,11 @@
             <div class="nav-right-outer-div">
                 <button class="nav-right-btns">▼</button>
                 <div class="nav-right-inner-div nav-right-sign-dropdown">
-                    <a href="/movies/signup" class="nav-links">Sign Up</a>
-                    <a href="/movies/login" class="nav-links">Sign In</a>
-                    <a href="/movies/logout" class="nav-links">Sign Out</a>
+                    <a href="/signup" class="nav-links">Sign Up</a>
+                    <a href="/signin" class="nav-links">Sign In</a>
+                    <a href="/signout" class="nav-links">Sign Out</a>
                 </div>
             </div>
         </div>
-    </div>
-
+        </div>
     </nav>

@@ -177,6 +177,13 @@ nav {
     text-decoration: none;
 }
 
+/* .sign-up-heading,
+.sign-in-heading {
+    font-size: 75px;
+    padding-top: 6%;
+    text-align: center;
+} */
+
 .index-heading,
 .show_genre-heading {
     font-size: 75px;
@@ -252,6 +259,7 @@ nav {
     text-decoration: none;
 }
 
+.signup-outer-div,
 .show-outer-div,
 .new-outer-div,
 .edit-outer-div,
@@ -311,6 +319,7 @@ p {
     text-decoration: none;
 }
 
+.signup-heading,
 .new-heading,
 .edit-heading {
     font-size: 75px;
@@ -323,6 +332,7 @@ form {
     text-align: center;
 }
 
+.signup-inner-div,
 .new-inner-div,
 .edit-inner-div {
     padding: 5px;
@@ -345,6 +355,7 @@ input {
     text-align: center;
 }
 
+#signup-submit-input,
 #new-submit-input,
 #edit-submit-input {
     margin-top: 20px;
