@@ -1,5 +1,18 @@
 <%- include('../partials/header.ejs', { name: 'Sign In' }) %>
 
-    <h1 class="sign-in-heading">Sign In to Your Account</h1>
-
+    <div class="signin-outer-div">
+        <h1 class="signin-heading">Sign In to Your Account</h1>
+        <form action="/signin" method="POST">
+            <div class="signin-inner-div">
+                <label for="email">Email or Username</label>
+                <input required type="text" name="email" id="email" class="input" placeholder="movieopolis@gmail.com or movieopolis1895">
+            </div>
+            <div class="signin-inner-div">
+                <label for="password">Password</label>
+                <input required type="text" name="password" id="password" class="input" placeholder="abc123!@#">
+            </div>
+            <input id="signin-submit-input" type="submit" value="Sign In">
+        </form>
+    </div>
+    
 <%- include('../partials/footer.ejs') %>

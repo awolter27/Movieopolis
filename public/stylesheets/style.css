@@ -260,6 +260,7 @@ nav {
 }
 
 .signup-outer-div,
+.signin-outer-div,
 .show-outer-div,
 .new-outer-div,
 .edit-outer-div,
@@ -320,6 +321,7 @@ p {
 }
 
 .signup-heading,
+.signin-heading,
 .new-heading,
 .edit-heading {
     font-size: 75px;
@@ -333,6 +335,7 @@ form {
 }
 
 .signup-inner-div,
+.signin-inner-div,
 .new-inner-div,
 .edit-inner-div {
     padding: 5px;
@@ -356,6 +359,7 @@ input {
 }
 
 #signup-submit-input,
+#signin-submit-input,
 #new-submit-input,
 #edit-submit-input {
     margin-top: 20px;
