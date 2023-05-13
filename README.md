@@ -1,6 +1,6 @@
 # Movieopolis
 
-Project 1
+Project 2
 
 ## Website
 
